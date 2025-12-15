@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOKTORCRAFT's OFFIZIELLE MOD SEITE</title>
+
+    <style>
+        /* ==================================== */
+        /* NEUES CSS FÜR DIE TOP BAR (Navigation) */
+        /* ==================================== */
+        .top-nav {
+            /* Oben auf der Seite fixiert */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+
+            /* Auffälliger Hintergrund und dicker Rahmen */
+            background-color: #3333FF; /* Dunkles Blau */
+            border-bottom: 5px solid #FF00FF; /* Helles Magenta als Trennlinie */
+
+            /* Flexbox für einfache Zentrierung der Links */
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+
+            /* Höhere Ebene, damit sie über anderen Elementen liegt */
+            z-index: 1000;
+        }
+
+        .nav-link {
+            /* Styling für die einzelnen Links */
+            color: #FFFF00; /* Gelbe Schrift */
+            font-size: 22px;
+            font-weight: bold;
+            text-decoration: none; /* Keine Unterstreichung */
+            padding: 10px 30px;
+            margin: 0 15px;
+            border: 3px solid #00FF00; /* Grüner Rahmen */
+            background-color: #FF0000; /* Roter Hintergrund */
+            border-radius: 5px;
+
+            /* Übergang für Hover-Effekt */
+            transition: background-color 0.3s, transform 0.3s;
+
+            /* Lass die Links pulsieren, um Aufmerksamkeit zu erregen! */
+            animation: pulse 2s infinite;
+        }
+
+        .nav-link:hover {
+            background-color: #C00000; /* Dunklerer Rot-Ton beim Hover */
+            transform: scale(1.1); /* Größer werden beim Hover */
+        }
+
+        /* Puls-Animation für die Links */
+        @keyframes pulse {
+            0% { box-shadow: 0 0 5px #00FF00; }
+            50% { box-shadow: 0 0 20px #00FF00, 0 0 30px #00FFFF; }
+            100% { box-shadow: 0 0 5px #00FF00; }
+        }
+
+        /* Platzhalter, um den Inhalt unterhalb der fixierten Leiste zu verschieben */
+        .content-padding {
+            padding-top: 80px; /* Platzhalterhöhe: etwas mehr als die Höhe der Navigationsleiste */
+        }
+
+        /* ==================================== */
+        /* BESTEHENDES CSS (Original-Troll-Stil) */
+        /* ==================================== */
+
+        body {
+            font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
+            background-color: #000033;
+            color: #FFFF00;
+            text-align: center;
+            background-image: url('https://i.imgur.com/U8EEn.gif'); /* Neon-Gitter-Hintergrund */
+        }
+
+        h1 {
+            color: #FF00FF; /* Helles Magenta */
+            font-size: 55px;
+            /* Wir lassen die Überschrift blinken und hüpfen! */
+            animation: blink-and-bounce 1.5s linear infinite;
+        }
+
+        /* Die CSS-Animation für die Überschrift */
+        @keyframes blink-and-bounce {
+            0% { transform: scale(1); opacity: 1; }
+            25% { transform: scale(1.1); opacity: 0.5; }
+            50% { transform: scale(1); opacity: 1; }
+            75% { transform: scale(0.9); opacity: 0.5; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        p {
+            font-size: 20px;
+            color: #00FF00; /* Neon-Grün */
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            border: 1px solid #00FFFF;
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: rgba(255, 0, 0, 0.3); /* Halbdurchsichtiges Rot */
+        }
+
+
+        .fake-download-button {
+            display: inline-block;
+            background-color: #FF0000; /* Rot */
+            color: #FFFFFF;
+            padding: 30px 60px;
+            font-size: 30px;
+            font-weight: bold;
+            text-decoration: none;
+            border: 10px dashed #FFFF00; /* Gelb, gestrichelt */
+            border-radius: 15px;
+            margin-top: 40px;
+
+
+            transition: transform 0.2s;
+        }
+
+        .fake-download-button:hover {
+            background-color: #C00000;
+            transform: scale(1.05);
+        }
+
+        img {
+            margin: 20px;
+            border: 5px solid #00FFFF; /* Türkiser Rahmen */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ==================================== -->
+    <!-- NEUE TOP BAR HIER EINFÜGEN -->
+    <!-- ==================================== -->
+    <nav class="top-nav">
+        <!-- 1. Link anpassen (href und Text) -->
+        <a href="https://createfreundesmp.github.io/" target="_blank" class="nav-link">
+            DoktorCraft's Shop
+        </a>
+
+        <!-- 2. Link anpassen (href und Text) -->
+        <a href="https://www.youtube.com/@doktorcraft23" target="_blank" class="nav-link">
+            Zum ECHTEN Meisterwerk!
+        </a>
+    </nav>
+
+    <!-- Platzhalter, damit der Inhalt unter der fixierten Leiste startet -->
+    <div class="content-padding"></div>
+
+    <!-- ==================================== -->
+    <!-- HAUPTINHALT (Dein Original-Content) -->
+    <!-- ==================================== -->
+
+    <img src="https://media.tenor.com/P0dM5S8TjGAAAAAM/minecraft-spinning.gif" alt="Drehender Diamant" width="150">
+    <img src="https://i.gifer.com/origin/70/702e131b6c0b68636b3b6d5c6cccc43f_w200.gif" alt="Tanzendes Schwein" width="150">
+    <img src="https://media.tenor.com/P0dM5S8TjGAAAAAM/minecraft-spinning.gif" alt="Drehender Diamant" width="150">
+
+    <h1>!!! DOKTORCRAFT's GEHEIME MOD-DATENBANK !!!</h1>
+
+    <p>WILLKOMMEN AUF DER EINZIG WAHREN SEITE FÜR DOKTORCRAFT-FANS!</p>
+    <p>Wir haben es geschafft! Wir haben seinen Server gehackt und den **ULTIMATIVEN MOD** gefunden!</p>
+    <p>(Den, den er euch nie zeigen wollte!)</p>
+
+    <h2>Der "UNENDLICHE ERZE"-Mod (v6.9 Pro)</h2>
+    <p>Features:</p>
+    <ul>
+        <li>Alle Erze an einem Ort!</li>
+        <li>Kompatibel mit ALLEN Modpacks (Garantiert!)</li>
+        <li>Funktioniert mit der neuesten Version von Java Edition (1.8 bis 1.20)</li>
+        <li>Garantiert Virenfrei (NICHT!)</li>
+    </ul>
+
+    <a href="javascript:void(0)" class="fake-download-button" onclick="alert('HAHA! DU WURDEST GETROLLT! Der Download startet in 4 Stunden... oder auch nicht.')">
+        JETZT DOWNLOADEN (100% Sicher!)
+    </a>
+
+    <p style="margin-top: 50px;">Sei schnell, bevor DoktorCraft dies wieder offline nimmt! (Das wird er aber nie tun.)</p>
+    <p>Letzte Aktualisierung: 12.12.2025</p>
+
+</body>
+</html>
